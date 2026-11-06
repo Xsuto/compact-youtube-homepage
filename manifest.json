@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Compact YouTube Homepage",
+  "version": "1.0.1",
+  "description": "Displays more, smaller video cards and hides paid-promotion overlays on YouTube thumbnails.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "css": ["compact-youtube.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
